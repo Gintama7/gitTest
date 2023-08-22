@@ -17,6 +17,14 @@ for(let i=0;i<items.length;i++)
     items[i].style.fontWeight=900;
 }
 
-tagItems = document.getElementsByTagName('li');
+// tagItems = document.getElementsByTagName('li');
 
-tagItems[4].style.color = "yellow";
+// tagItems[4].style.color = "yellow";
+
+//Second list element colour changed to green
+let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+
+//Second list element visibility changed to hidden
+let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.visibility = 'hidden';
